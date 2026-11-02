@@ -1,0 +1,6 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Authorization</title><style>:root{--bg:#fff;--fg:#1a1a1a;--mute:#555}@media (prefers-color-scheme:dark){:root{--bg:#121212;--fg:#eee;--mute:#aaa}}body{background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,sans-serif;max-width:760px;margin:0 auto;padding:24px 16px}h1{font-size:1.6rem}h2{font-size:1.15rem;margin-top:1.6em}small,.m{color:var(--mute)}code{word-break:break-all}</style></head><body>
+<h1>Authorization received</h1>
+<p>Copy the code below back into the clipador terminal. It expires in a few minutes and is useless without the app secret.</p>
+<p><code id="c">(no code in URL)</code></p><p class="m" id="e"></p>
+<script>try{var q=new URLSearchParams(location.search);var c=q.get('code');if(c)document.getElementById('c').textContent=c;var e=q.get('error');if(e)document.getElementById('e').textContent='Error: '+e+' '+(q.get('error_description')||'');}catch(x){}</script>
+</body></html>
